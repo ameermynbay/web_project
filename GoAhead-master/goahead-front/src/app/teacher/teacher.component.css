@@ -1,0 +1,19 @@
+.teacher-item {
+    padding: 10px 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.teacher-name {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: #2F75F3;
+    font-weight: 700;
+    text-decoration: none;
+}
+#img {
+display: inline-flex;
+width: 50vh;
+height: 50vh;
+}

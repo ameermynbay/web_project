@@ -1,0 +1,4 @@
+<div *ngFor="let course of courses">
+    <button class="remove" (click)="removeCourse(course.id)">Remove course</button>
+    <app-course [course]=course></app-course>
+</div>

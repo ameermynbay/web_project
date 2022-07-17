@@ -1,0 +1,95 @@
+.div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(89, 149, 233);
+}
+
+#intro {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(89, 149, 233);
+    background-size: 300px 100px;
+    text-align: center;
+}
+
+#sub {
+    margin-left: 650px;
+    font-size: 50px;
+    background-color: rgb(103, 161, 231);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#submit {
+    margin-left: 400px;
+    margin-right: 350px;
+    font-size: 50px;
+    background-color: rgb(103, 161, 231);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.go-logo {
+    color: #2F75F3;
+}
+
+.logo {
+    font-size: 4rem;
+    color: #9172DB;
+    font-weight: 700;
+}
+
+.lesson {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(89, 149, 233);
+    background-size: 300px 100px;
+    text-align: center;
+    display: flexbox;
+   
+}
+
+#img {
+    font-size: 15px;
+    margin-left: 600px;
+    padding: 60px;
+    margin-top: 0px;
+    display: flex;
+}
+
+#i {
+    margin-top: 20px;
+    display: flexbox;
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.top-footer {
+    text-align: center;
+    align-content: center;
+    margin-top: 100px;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}

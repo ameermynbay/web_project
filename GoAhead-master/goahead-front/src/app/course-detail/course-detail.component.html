@@ -1,0 +1,17 @@
+<div class="course_overall">
+    <div class="course_name">{{course.name}}</div>
+    <div class="course-detail">
+        <div class="course-photo-name">
+
+            <img class="course_photo" src="{{course.image_ref}}">
+        </div>
+        <div class="description">
+            <div class="course_description">{{course.description}}</div>
+            <div class="course_price">Course price is {{course.price}}</div>
+            <div class="course_author">{{course.author}}</div>
+            <div *ngFor="let teacher of courseTeachers">
+                <app-teacher [teacher]="teacher"></app-teacher>
+            </div>
+        </div>
+    </div>
+</div>

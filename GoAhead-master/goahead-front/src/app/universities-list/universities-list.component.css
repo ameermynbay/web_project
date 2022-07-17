@@ -1,0 +1,16 @@
+
+#img {
+    width: 40vh;
+    height: 40vh;
+    text-align: center;
+    }
+#name{
+    text-decoration: none;
+}
+div{
+    justify-content: space-around;
+}
+#ng{
+    margin-inline-start: 15vh;
+    display: inline-flex;
+}

@@ -1,0 +1,35 @@
+<div class="teacher" *ngIf="teacher">
+    <div class="teacher-detail">
+        <p>Teacher name: {{teacher.name}}</p>
+        <img id="img" src="{{teacher.image_ref}}" alt="Загрузка">
+        <div *ngFor="let university of teachersUniversities">
+            <app-university [university]="university"></app-university>
+        </div>
+        <div class="description">
+            <p>Teacher degree:{{teacher.degree}}</p>
+        </div>
+        <div class="btn">
+            <button id="first" (click)="onDefault()">All</button>
+            <button id="sec" (click)="onPositive()">Positive</button>
+            <button id="th" (click)="onNegative()">Negative</button>
+        </div>
+        <div *ngIf="isDefault">
+            <div *ngFor="let review of reviews">
+                <div>{{review.author}}</div>
+                <div>{{review.description}}</div>
+            </div>
+        </div>
+        <div *ngIf="isPositive">
+            <div *ngFor="let positivereview of positiveReviews">
+                <div>{{positivereview.author}}</div>
+                <div>{{positivereview.description}}</div>
+            </div>
+        </div>
+        <div *ngIf="isNegative">
+            <div *ngFor="let negativereview of negativeReviews">
+                <div>{{negativereview.author}}</div>
+                <div>{{negativereview.description}}</div>
+            </div>
+        </div>
+    </div>
+</div>

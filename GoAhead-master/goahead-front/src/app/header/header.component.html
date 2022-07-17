@@ -1,0 +1,70 @@
+<div class="header-top">
+    <nav class="header-nav">
+
+
+        <div class="nav-links">
+            <ul class="left-links">
+
+                <li class="nav-link nav-logo">
+                    <a routerLink=""><span class="go-logo">Go</span>Ahead!</a>
+                </li>
+                <li class="nav-link dropdown-menu" (mouseenter)="dropdownMenuDisplay('courses')" (mouseleave)="dropdownMenuHide('courses')">
+                    <a (click)="directToCourses()">
+                        <span class="link-name">Courses</span>
+                        <span class="dropdown-btn">▾</span>
+                    </a>
+                    <div class="options-window-container" *ngIf="displayDropdownWindows.courses">
+                        <ul class="options" *ngFor="let courseitem of courseList">
+                            <li class="option">
+                                <div (click)="courseItemClick(courseitem)" class="option-name">{{courseitem.name}}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-link dropdown-menu" (mouseenter)="dropdownMenuDisplay('teachers')" (mouseleave)="dropdownMenuHide('teachers')">
+                    <a (click)="directToTechers()">
+                        <span class="link-name">Teachers</span>
+                        <span class="dropdown-btn">▾</span>
+                    </a>
+                    <div class="options-window-container" *ngIf="displayDropdownWindows.teachers">
+                        <ul class="options" *ngFor="let teacheritem of teacherList">
+                            <li class="option">
+                                <div (click)="teacherItemClick(teacheritem)" class="option-name">{{teacheritem.name}}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-link dropdown-menu" (mouseenter)="dropdownMenuDisplay('universities')" (mouseleave)="dropdownMenuHide('universities')">
+                    <a (click)="directToUniversities()">
+                        <span class="link-name">Universities</span>
+                        <span class="dropdown-btn">▾</span>
+                    </a>
+                    <div class="options-window-container" *ngIf="displayDropdownWindows.universities">
+                        <ul class="options" *ngFor="let uniitem of uniList">
+                            <li class="option">
+                                <div (click)="uniItemClick(uniitem)" class="option-name">{{uniitem.name}}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-link dropdown-menu">
+                    <a (click)="directToMyCourses()">My courses</a>
+                </li>
+            </ul>
+            <ul class="right-links">
+                <li class="nav-link">
+                    <a routerLink="">
+                        <span class="link-name">Home</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a id="signup-btn" (click)="signup()" *ngIf="!isLoggedIn">Sign up</a>
+                </li>
+                <li class="nav-link">
+                    <a id="login-logout-btn" (click)="isLoggedIn ? logout() : login() ">{{ isLoggedIn ? 'Logout' : 'Login'}}</a>
+                </li>
+            
+            </ul>
+        </div>
+    </nav>
+</div>

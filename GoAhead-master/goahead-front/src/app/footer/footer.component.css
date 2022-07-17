@@ -1,0 +1,137 @@
+.footer-main__inform__link {
+    text-decoration: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.footer {
+    width: 100%;
+    height: 70vh;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    color: #FFF;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    font-weight: 300;
+ 
+}
+
+.footer-top {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    padding-left: 10%;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.footer-main {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 10% 5% 10% 10%;
+}
+
+.footer-main-inform__title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #e6e6e6;
+    font-weight: 700;
+}
+
+
+.footer-main-inform {
+    width: 23%;
+}
+
+.footer-main-inform__description {
+    width: 80%;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+}
+
+.footer-main-social__link {
+    color: #b61616;
+    font-size: 2rem;
+    margin: 0 5px;
+}
+
+.footer-main-inform__link {
+    margin-bottom: 5px;
+}
+
+.footer-main__information {
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.footer-main__inform__link {
+    height: 25px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.footer-inform__contact {
+    margin-bottom: 10px;
+}
+
+
+
+.gray {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: auto;
+    }
+    .footer-top {
+        flex-wrap: wrap;
+        height: 250px;
+        padding: 0 10%;
+        margin: 5% 0;
+    }
+    .footer-top-left {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .footer-top-left__email {
+        width: 60%;
+    }
+    .footer-top-left__submit {
+        width: 40%;
+    }
+    .footer-top-right {
+        width: 100%;
+        height: 100px;
+    }
+    .footer-main-inform {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer-top-right {
+        font-size: 18px;
+    }
+    .footer-top-left__email {
+        width: 100%;
+    }
+    .footer-top-left__submit {
+        width: 100%;
+    }
+}

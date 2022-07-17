@@ -1,0 +1,6 @@
+<div id="ng" *ngFor="let university of universities">
+    <div (click)="selectUniversity(university)">
+    <img id="img" src="{{university.image_ref}}"><br>
+    <a id="name" >{{university.name}}</a>
+</div>
+</div>

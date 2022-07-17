@@ -1,0 +1,10 @@
+<div class="courses-list">
+    <img class="emoji" src="https://www.stickpng.com/assets/images/58e8ff68eb97430e819064d0.png">
+    <div class="title">All possible courses for you!</div>
+    <div class="course-list">
+
+        <div *ngFor="let course of courses">
+            <app-course [course]=course></app-course>
+        </div>
+    </div>
+</div>

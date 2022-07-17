@@ -1,0 +1,18 @@
+<div class="div">
+    <app-header [isLoggedIn]="checkIfLoggedIn()" [isSuperUser]="checkIfSuperUser()"></app-header>
+    <router-outlet></router-outlet>
+    <div class="top-footer">
+        <div class="logo"><span class="go-logo">Go</span>Ahead!</div>
+        <h1 class="main">Motivation to continue!<br> We select a teacher for your goals, we teach on interactive tasks according to your interests.</h1>
+        <img id="i" src="https://habrastorage.org/getpro/habr/post_images/289/b51/40a/289b5140a1c38f0dd4a2471c5eadfbe6.jpg" width="750" height="550">
+
+        <div class="lesson">
+            Lessons with a teacher at GoAhead Online School</div>
+
+        <div class="submit">
+            <h1 id="intro">Take an introductory lesson<br> We will get to know each other, determine the level and show<br> how training takes place in a free lesson</h1>
+            <button id="submit" (click)="click()">Submit your application</button>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
